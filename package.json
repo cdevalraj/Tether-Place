@@ -1,0 +1,35 @@
+{
+	"name": "tether-place",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"type": "module",
+	"author": "",
+	"license": "ISC",
+	"keywords": [],
+	"scripts": {
+		"prepare": "husky",
+		"format": "pnpx biome format --write",
+		"lint": "pnpx biome lint --write",
+		"lint-format": "biome check --write",
+		"dev": "pnpm --filter ./apps/* dev"
+	},
+	"lint-staged": {
+		"*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc,css}": "pnpm lint-format"
+	},
+	"devEngines": {
+		"packageManager": {
+			"name": "pnpm",
+			"version": "^11.21.0",
+			"onFail": "download"
+		}
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.5.12",
+		"husky": "9.1.7",
+		"lint-staged": "17.5.0"
+	},
+	"engines": {
+		"node": ">=22.11.0"
+	}
+}
