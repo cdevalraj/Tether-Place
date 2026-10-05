@@ -1,0 +1,66 @@
+.home-hero {
+	position: relative;
+	height: 400px;
+	background-color: beige;
+}
+
+.home-hero h1 {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.home-content-container {
+	display: flex;
+	flex-direction: column;
+	background-color: antiquewhite;
+	gap: 32px;
+	padding: 36px;
+}
+
+.info-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+}
+
+.info-section .btn {
+	width: auto;
+	align-self: flex-end;
+}
+
+.call-to-action {
+	position: relative;
+	background-color: grey;
+	height: 200px;
+}
+
+.call-to-action .overlay {
+	position: absolute;
+	top: 60%;
+	left: 80%;
+}
+
+.call-to-action .btn {
+	width: auto;
+	padding: 8px 16px;
+	border-radius: 16px;
+}
+
+.info-section .notes-grid {
+	align-self: flex-start;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.info-section .features {
+	width: 100%;
+	display: grid;
+	gap: 16px;
+	grid-template-columns: 1fr 1fr;
+}
+.info-section .features .card {
+	background-color: darkslategrey;
+	padding: 26px;
+}

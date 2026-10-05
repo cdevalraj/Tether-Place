@@ -4,15 +4,16 @@
 	"description": "",
 	"main": "index.js",
 	"type": "module",
+	"private": true,
 	"author": "",
 	"license": "ISC",
 	"keywords": [],
 	"scripts": {
 		"prepare": "husky",
-		"format": "pnpx biome format --write",
-		"lint": "pnpx biome lint --write",
+		"format": "biome format --write",
+		"lint": "biome lint --write",
 		"lint-format": "biome check --write",
-		"dev": "pnpm --filter ./apps/* dev"
+		"dev": "pnpm --parallel --filter \"./apps/*\" dev"
 	},
 	"lint-staged": {
 		"*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc,css}": "pnpm lint-format"
@@ -20,7 +21,7 @@
 	"devEngines": {
 		"packageManager": {
 			"name": "pnpm",
-			"version": "^11.21.0",
+			"version": "^12.9.1",
 			"onFail": "download"
 		}
 	},
