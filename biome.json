@@ -8,7 +8,7 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"includes": ["apps/**/*", "!dist", "!node_modules"]
+		"includes": ["apps/**/*", "packages/**/*", "!dist", "!node_modules"]
 	},
 	"formatter": {
 		"enabled": true,
@@ -29,7 +29,8 @@
 		"enabled": true,
 		"actions": {
 			"source": {
-				"organizeImports": "on"
+				"organizeImports": "on",
+				"recommended": true
 			}
 		}
 	}

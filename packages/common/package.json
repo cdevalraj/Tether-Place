@@ -1,0 +1,26 @@
+{
+	"name": "common",
+	"version": "1.0.0",
+	"description": "",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "tsc"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "module",
+	"exports": {
+		"./*": "./dist/*.js"
+	},
+	"typesVersions": {
+		"*": {
+			"*": [
+				"dist/*.d.ts"
+			]
+		}
+	},
+	"devDependencies": {
+		"typescript": "^7.0.2"
+	}
+}
